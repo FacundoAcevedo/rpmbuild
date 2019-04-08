@@ -1,5 +1,4 @@
 # rpmbuild
-https://img.shields.io/badge/license-GPLv3%2B-blue.svg
 [![License: GPLv3+](https://img.shields.io/badge/license-GPLv3%2B-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
 Some RPM specs
