@@ -1,0 +1,8 @@
+**/BUILD
+**/BUILDROOT
+**/RPMS
+**/SRPMS
+
+# Ignore source archives
+*.tar.gz
+*.tar.xz
