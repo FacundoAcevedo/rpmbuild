@@ -43,6 +43,20 @@ License:        MIT
 URL:            %{gourl}
 Source:         %{gosource}
 
+BuildRequires:  golang(github.com/aperturerobotics/jacobsa-crypto/siv)
+BuildRequires:  golang(github.com/hanwen/go-fuse/v2/fs)
+BuildRequires:  golang(github.com/hanwen/go-fuse/v2/fuse)
+BuildRequires:  golang(github.com/rfjakob/eme)
+BuildRequires:  golang(github.com/sabhiram/go-gitignore)
+BuildRequires:  golang(github.com/spf13/pflag)
+BuildRequires:  golang(golang.org/x/crypto/chacha20)
+BuildRequires:  golang(golang.org/x/crypto/chacha20poly1305)
+BuildRequires:  golang(golang.org/x/crypto/hkdf)
+BuildRequires:  golang(golang.org/x/crypto/scrypt)
+BuildRequires:  golang(golang.org/x/sys/cpu)
+BuildRequires:  golang(golang.org/x/sys/unix)
+BuildRequires:  golang(golang.org/x/term)
+
 %description %{common_description}
 
 %gopkg
@@ -51,8 +65,6 @@ Source:         %{gosource}
 %goprep -A
 %autopatch -p1
 
-%generate_buildrequires
-%go_generate_buildrequires
 
 %build
 %gobuild -o %{gobuilddir}/bin/gocryptfs %{goipath}
